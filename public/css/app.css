@@ -1,0 +1,246 @@
+#login-page{
+    background-color: #FFF;
+}
+
+.title-ifcontrol{
+    padding-left: 30px;
+    margin-top: 4vh;
+}
+
+.form-login{
+    background-color: #F8F8F8;
+    border-radius: 20px;
+    width: 80%;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+.form-login .alert{
+    padding: .4em;
+    margin-top: .6em;
+}
+
+.form-title{
+    margin: 0 auto;
+    text-align: center;
+}
+
+.green-line{
+    height: 3px;
+    background-color: #005600;
+    width: 30%;
+    margin: 0 auto;
+}
+
+.form-box{
+    width: 100%;
+    height: 83vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#bg-login{
+    background: url('../img/background-login.svg');
+    background-size: cover;
+}
+
+.percent{
+    height: 15px;
+    border-radius: 10px;
+    /* margin: 5px 12px; */
+    background-color: #d7f4da;
+}
+
+.percent-bar{
+    height: 15px;
+    border-radius: 10px;
+    background-color: #2f9e41;
+}
+
+.percent-value{
+    margin: -20px;
+    justify-content: center;
+    display: flex;
+}
+
+#tab-content-room, #tab-content-env{
+    height: 250px;
+    overflow-y: scroll;
+}
+
+.pl-1{
+    padding-left: 10px;
+}
+
+.pb-0{
+    padding-bottom: 0px;
+}
+
+.ml-1{
+    margin-left: 15px;
+}
+
+.move-icon{
+    padding-left: .3em;
+}
+
+select {
+    cursor:pointer;
+    background: transparent;
+    background-image: url("data:image/svg+xml;utf8,<svg fill='gray' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+    background-repeat: no-repeat;
+    background-position-x: 100%;
+    background-position-y: 5px;
+    border: 1px solid #dfdfdf;
+    border-radius: 2px;
+    margin-right: 2rem;
+    padding: 1rem;
+    padding-right: 2rem;
+}
+
+.erroInputsVazios, .erroExcluir, .erroReq{
+    padding: 10px;
+    background-color: #f9e1e5;
+    color: #af233a;
+    border-radius: 12px;
+}
+
+#sucessoForm{
+    padding: 10px;
+    background-color: #d6ead5;
+    color: #008800;
+    border-radius: 12px;
+}
+
+.inputError{
+    border-color: #ff5919!important;
+    box-shadow: 0 0 0 0.2rem rgb(255 0 0 / 13%)
+}
+
+.editaPredio{
+    padding: 3px;
+    cursor: pointer;
+    background-color: #2f9e41;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 5px;
+    border-radius: 15px;
+}
+
+.close_button{
+    cursor:pointer;
+    float: right;
+}
+
+button:focus {
+    outline: 0!important;
+}
+
+.chart-title{
+    margin-bottom: 20px!important;
+}
+
+.chart-card{
+    margin-bottom:17px;
+}
+
+.card-image{
+    max-width: 80%!important;
+    max-height: 18rem;
+    margin: 0 auto;
+    display: table;
+    border-radius: 2px;
+}
+
+.card-scroll{
+    height: 130px;
+    overflow-y: scroll;
+}
+
+#description{
+    resize: none;
+}
+
+.card-scroll{
+    overflow-y: scroll;
+    height: 130px;
+    overflow-x: hidden;
+}
+
+.tooltip_status[title]:hover {
+    position: relative;
+}
+
+.tooltip_status[title]:hover:before {
+    position: absolute;
+    top: auto;
+    left: 100%;
+    z-index: 99999;
+    content: attr(title);
+    margin-top: -5px;
+    margin-left: 0.5em;
+    padding: 3px;
+    width: 100px;
+    overflow: hidden;
+    color: #FFF;
+    text-align: center;
+    background-color: #3f3f3feb;
+    box-sizing: border-box;
+    box-shadow: 2px 2px 2px rgb(0 0 0 / 20%);
+}
+
+.tooltip_status[title]:hover:after {
+    position: absolute;
+    z-index: 99999;
+    content: '';
+    width: 0;
+    height: 0;
+    font-size: inherit;
+    top: 25%;
+    left: 100%;
+    margin-left: 0;
+    margin-top: -0.125em;
+    border: 0.25em dashed transparent;
+    border-right: 0.25em solid #222;
+}
+  
+/* SCROLL  */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+@media only screen and (max-width:992px){
+    #bg-login{
+        display:none;
+    }
+}
+
+@media only screen and (max-width:568px){
+    .dropdown-menu, .dropdown-menu-end{
+        top:auto!important;
+    }
+}
+
+@media only screen and (min-width:1200px) and (max-width:1550px){
+    .chart-card{
+        margin-bottom:38px;
+    }
+}
+
+@media only screen and (min-width:1200px) and (max-width:1585px){
+    .card-responsive{
+        min-height: 200px;
+    }
+    .card-title{
+        white-space: break-spaces;
+    }
+}
